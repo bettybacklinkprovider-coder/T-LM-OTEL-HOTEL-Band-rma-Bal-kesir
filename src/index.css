@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Custom Glassmorphism Effect */
+.glass-panel {
+  background: rgba(24, 15, 38, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.12);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(30, 19, 48, 0.8) 0%, rgba(18, 11, 30, 0.9) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.18);
+  box-shadow: 0 10px 30px -10px rgba(88, 28, 135, 0.25);
+}
+
+/* Luxury Glow & Accent Shadows */
+.purple-glow {
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.25);
+}
+
+.gold-accent-border {
+  border-image: linear-gradient(to right, #eab308, #ca8a04) 1;
+}
+
+/* Smooth Image Reveal Hover */
+.image-zoom-container {
+  overflow: hidden;
+}
+
+.image-zoom-container img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-zoom-container:hover img {
+  transform: scale(1.06);
+}
+
+/* Hide scrollbar for clean UI in galleries/filter bars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

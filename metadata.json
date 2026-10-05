@@ -1,0 +1,6 @@
+{
+  "name": "TÜLM OTEL HOTEL – Bandırma, Balıkesir",
+  "description": "Experience luxury, comfort and Turkish hospitality at TÜLM OTEL HOTEL in Bandırma, Balıkesir. Modern rooms, 24/7 reception, free Wi-Fi, and prime location.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
